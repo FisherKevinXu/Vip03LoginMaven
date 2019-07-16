@@ -15,7 +15,7 @@ public class ConnectMysql {
 	public ConnectMysql() {
 		try {
 			//从properties文件中读取数据库地址、用户名和密码。
-			FileInputStream fis = new FileInputStream(this.getClass().getResource("").getPath() + "/inter.properties");
+			FileInputStream fis = new FileInputStream(this.getClass().getResource("").getPath() + "../../inter.properties");
 			Properties prop = new Properties();
 			//将文件中的内容读取到propertie设置对象中。
 			prop.load(fis);
